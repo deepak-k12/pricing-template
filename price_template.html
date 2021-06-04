@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet"> 
+
+<!-- CSS styles -->
+
+<style> 
+.div1 {
+  width: 250px;
+  margin-top: 150px;
+  height: 400px;
+  background: red;
+  position: absolute;
+  font-family: 'Ubuntu', sans-serif;
+  animation: first 3s 1;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+}
+
+@keyframes first {
+  from {background: red; left: 0px; top: 0px;opacity:0}
+  to {background: whitesmoke; left: 200px; top: 0px;}
+
+}
+
+h1{
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+p{
+	text-align: center;
+}
+.div2 {
+  width: 250px;
+  height: 400px;
+  margin-top: 100px;
+  background: red;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  border-radius: 20px;
+  animation: second 3s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes second {
+  from {background: red; left: 0px; top: 0px;opacity:0}
+  to {background: whitesmoke; left: 500px; top: 0px;}
+
+}
+
+.div3 {
+  width: 250px;
+  height: 400px;
+  margin-top: 150px;
+  background: red;
+  position: absolute;
+  border-radius: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  animation: third 3s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes third {
+  from {background: red; left: 0px; top: 0px;opacity:0}
+  to {background: whitesmoke; left: 800px; top: 0px;}
+
+}
+
+.card-head{
+	text-align: center;
+	color: green;
+	font-size: 30px;
+}
+
+.price{
+	text-align: center;
+	font-size: 35px;
+}
+label{
+	background-color: blue;
+	color: white;
+	left:500px;
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	padding-top: 10px;
+	padding-right: 72px;
+	padding-bottom: 10px;
+
+}
+button {
+  background-color: white;
+  color: black;
+  border: 1px solid blue;
+  font-size: 20px;
+  border-radius: 12px;
+}
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+.div1:hover {
+  transform: scale(1.1);
+}
+.div2:hover {
+  transform: scale(1.1);
+  }
+.div3:hover {
+  transform: scale(1.1);
+  }
+
+body{
+	background-color: purple;
+}
+</style>
+
+<!-- End styles -->
+
+<!-- JS -->
+
+<script type="text/javascript">
+	function func(){
+		console.log('clicked');
+	}
+</script>
+
+<!-- End JS -->
+
+</head>
+<body>
+
+<h1>KICK START YOUR BUSINESS</h1>
+<div class="div1">
+	<p class="card-head">STANDARD</p>
+	<p>Great for small business.</p>
+	<p class="price"><sup>$</sup>5<sub> / month</sub></p>
+	<p>100GB of space</p>
+	<p>Unlimited support</p>
+	<p>Sample text</p>
+	<center><button>Buy Now</button></center>
+</div>
+<div class="div2">
+	<p class="card-head">PREMIUM</p>
+	<p>Great for small business.</p>
+	<p class="price"><sup>$</sup>25<sub> / month</sub></p>
+	<p>100GB of space</p>
+	<p>Unlimited support</p>
+	<p>Free .com domain</p>
+	<center><button>Buy Now</button></center>
+</div>
+<div class="div3">
+	<p class="card-head">SUPREME</p>
+	<p>Great for small business.</p>
+	<p class="price"><sup>$</sup>50<sub> / month</sub></p>
+	<p>100GB of space</p>
+	<p>Unlimited support</p>
+	<p>Free .org domain</p>
+	<center><button onclick="func();">Buy Now</button></center>
+</div>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOST POPULAR</label>
+</body>
+</html>
